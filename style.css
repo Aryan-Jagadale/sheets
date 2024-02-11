@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgrey; 
+    border-radius: 6px; 
+}
+  
+  .page-actions-cont {
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 25px;
+    overflow: hidden;
+  }
+
+
+  .nav-content-title{
+    margin:0 0.4rem;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+
+  }
+  .nav-menu-list{
+    display: flex;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+
+  }
+  .page-action {
+    margin: 0.4rem;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .pageSelected{
+    margin: 0.4rem;
+    background: rgb(225, 225, 225);
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    color: black;
+  }
+  
+  /* .page-action:hover {
+    margin: 0.4rem;
+    color: gray;
+    cursor: pointer;
+  } */
+  .cellprops-action-cont {
+    /* height: 3rem; */
+    background-color: #edf2fa;
+    border: 1px solid #e2eaf8;
+    border-radius: 87px;
+    display: flex;
+    align-items: center;
+    margin: 0rem 25px;
+    padding-left: 15px;
+  }
+ .icon-wrapper{
+  height: 20px;
+  width: 20px;
+  /* background-color: red; */
+ }
+  
+  .cellprops-action-cont > * {
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .font-family-prop,
+  .font-size-prop {
+    padding: 0.2rem;
+    font-family: 'Lato',sans-serif;
+  }
+  
+  .cellprops-action-cont > select {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .formula-actions-cont {
+    height: 2rem;
+    background-color: #ecf0f1;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .grid-cont {
+    height: calc(100vh - 12rem);
+    position: relative;
+    overflow: scroll;
+  }
+  .grid-cont::-webkit-scrollbar {
+    height: 10px; /* Set the desired height */
+}
+
+.grid-cont::-webkit-scrollbar-thumb {
+  background-color: lightgrey; 
+  border-radius: 6px; 
+}
+  
+  .sheet-count {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    padding-left: 34px;
+    border-top:2px solid #dfe4ea ;
+  }
+  
+  .sheet-count > * {
+    display: inline-block;
+  }
+  
+  .sheets-folder-cont {
+    /* height: 2rem; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Lato', sans-serif;
+  }
+  .sheet-folder {
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  
+  .formula-actions-cont > * {
+    display: inline-block;
+    margin-right: 0.7rem;
+  }
+  
+  .formula-actions-cont > input {
+    border: none;
+    outline: none;
+    height: 70%;
+  }
+  .formula-icon {
+    width: 1.2rem;
+  }
+  .address-bar {
+    width: 5rem;
+    text-align: center;
+  }
+  .formula-bar {
+    padding: 1px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem);
+  }
+  
+  .color-prop{
+    position: relative;
+  }
+  
+  .color-prop > input{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 3px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -41px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .add-sheet-btn{
+    padding: 3px;
+
+  }
+  .add-sheet-btn:hover{
+    background-color: rgb(222, 222, 222);
+    padding: 3px;
+    border-radius: 50%;
+  }
+  .flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  
